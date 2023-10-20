@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: row;
+        }
+        aside {
+            background-color: #c4e1ff; /* Dark grey color */
+            color: #fff;
+            width: 20%;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+
+        }
+        
+        header h1 {
+            font-size: 24px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+     
+    <aside>
+        <nav>
+            <ul>
+                 <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#change-package-name">Change Package Name</a></li>
+                <li><a href="#change-icons">Change Icons</a></li>
+                <li><a href="#change-screenshots">Change Screenshots</a></li>
+                <li><a href="#change-app-name">Change App Name</a></li>
+                <li><a href="#extract-aab">Extract AAB</a></li>
+                 <li><a href="#contact-me">Contact me</a></li> <!-- New "Contact me" tab -->
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+              <div class="image-container">
+        <img src="file:///C:/Users/soufiane/Desktop/documentation/assets/image.png" alt="Image of changing app name">
+    </div>
+            <p>Welcome to the QR Code Scanner & Generator app! This app is a versatile tool that allows users to scan and generate QR codes with ease. It comes equipped with the following features:</p>
+            <ul>
+                <li>Scanning QR codes quickly and accurately.</li>
+                <li>Generating customized QR codes for various purposes.</li>
+                <li>Exporting QR codes as PDF files for easy sharing and printing.</li>
+                <li>Viewing a history of recently scanned or generated QR codes.</li>
+            </ul>
+            <p>With our app, you can offer users a convenient way to interact with QR codes, whether for marketing, information sharing, or any other creative application.</p>
+        </section>
+        <section id="change-package-name">
+            <h2>Change Package Name</h2>
+            <p>Changing the package name is a crucial step in reskinning your QR Code Scanner & Generator app. Follow these steps:</p>
+            <ol>
+                <li>Open your Android project in Android Studio.</li>
+                <li>Navigate to the <code>app</code> folder, and locate the <code>build.gradle</code> file.</li>
+                <li>Inside the <code>build.gradle</code> file, find the <code>applicationId</code> property.</li>
+                <li>Change the <code>applicationId</code> to your desired package name.</li>
+                <li>Sync your project with Gradle to apply the changes.</li>
+            </ol>
+        </section>
+        <section id="change-icons">
+            <h2>Change Icons</h2>
+            <p>Customizing the app icons gives your QR Code Scanner & Generator app a unique look. Here's how:</p>
+            <ol>
+                <li>Prepare your icon images in various sizes (e.g., mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi).</li>
+                <li>In your Android project, locate the <code>res</code> folder and go to <code>drawable</code> folders.</li>
+                <li>Replace the default icon files with your custom icon images for each resolution.</li>
+                <li>Update the icon references in your app's manifest file (<code>AndroidManifest.xml</code>).</li>
+                <li>Rebuild and run your app to see the new icons in action.</li>
+            </ol>
+        </section>
+        <section id="change-screenshots">
+            <h2>Change Screenshots</h2>
+            <p>Updating app screenshots is essential for presenting your QR Code Scanner & Generator app. Follow these steps:</p>
+            <ol>
+                <li>Launch your app on a device or emulator in Android Studio.</li>
+                <li>Take screenshots of the app's various screens and features.</li>
+                <li>Replace the existing screenshots on your app's store listing with the new ones.</li>
+            </ol>
+        </section>
+        <section id="change-app-name">
+            <h2>Change App Name</h2>
+            <p>Renaming your app is the final touch. Here's how:</p>
+            <ol>
+                <li>Open the <code>strings.xml</code> file located in the <code>res/values</code> folder.</li>
+                <li>Update the <code>app_name</code> string resource with your desired app name.</li>
+                <li>Save the file.</li>
+                <li>Rebuild and run your app to reflect the new name.</li>
+            </ol>
+             <div class="image-container">
+        <img src="file:///C:/Users/soufiane/Desktop/documentation/assets/image.png" alt="Image of changing app name">
+    </div>
+        </section>
+        <section id="extract-aab">
+            <h2>Extract AAB (Android App Bundle)</h2>
+            <p>To extract your Android App Bundle (AAB) for distribution or further customization, follow these steps:</p>
+            <ol>
+                <li>Open your Android project in Android Studio.</li>
+                <li>Go to "Build" in the top menu and select "Build Bundle(s) / APK(s)." Then, click "Build Bundle(s)." </li>
+                <li>Choose the "Build Bundle" option.</li>
+                <li>Once the build process is complete, locate the AAB file in the specified output directory.</li>
+                <li>You now have the AAB file ready for distribution.</li>
+            </ol>
+        </section>
+         <section id="contact-me"> <!-- New "Contact me" section -->
+            <h2>Contact Information</h2>
+            <p>Name: Soufiane Aou</p>
+            <p>Email: jenoskon@outlook.com</p>
+            <p>Fiverr: fiverr.com/jenoskon </p>
+        </section>
+    </main>
+     
+</body>
+</html>
